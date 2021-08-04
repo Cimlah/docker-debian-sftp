@@ -15,3 +15,4 @@ RUN rm /etc/ssh/sshd_config && mv /usr/local/bin/user_add.sh /usr/local/bin/user
 COPY sshd_config /etc/ssh/
 WORKDIR /
 CMD entrypoint.sh
+EXPOSE 22
