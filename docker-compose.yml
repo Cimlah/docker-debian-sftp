@@ -26,8 +26,3 @@ services:
             - GDRIVE_CLIENT_SECRET=<gdrive_secret>
             - DROPBOX_CLIENT_ID=<dropbox_key>
             - ONLYOFFICE_URL=http://onlyoffice
-
-    onlyoffice:
-        container_name: filestash_oods
-        image: onlyoffice/documentserver
-        restart: unless-stopped
