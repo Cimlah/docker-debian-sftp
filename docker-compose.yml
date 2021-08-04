@@ -6,7 +6,8 @@ services:
         restart: unless-stopped
         hostname: debian-sftp
         container_name: debian-sftp
-        ports: "2800:22"
+        ports:
+            - "2800:22"
         stdin_open: true
         tty: true
         volumes: 
@@ -17,7 +18,8 @@ services:
         restart: unless-stopped
         hostname: filestash
         container_name: filestash
-        ports: "8334:8334"
+        ports:
+            - "8334:8334"
         environment: 
             - APPLICATION_URL=
             - GDRIVE_CLIENT_ID=<gdrive_client>
