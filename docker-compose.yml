@@ -1,0 +1,31 @@
+version: '3.3'
+
+services:
+    debian-sftp:
+        image: cimlah/docker-debian-sftp:latest
+        restart: unless-stopped
+        hostname: debian-sftp
+        container_name: debian-sftp
+        ports: "2800:22"
+        stdin_open: true
+        tty: true
+        volumes: 
+            - /path/you/want/to/use:/home
+
+    filestash:
+        image: machines/filestash
+        restart: unless-stopped
+        hostname: filestash
+        container_name: filestash
+        ports: "8334:8334"
+        environment: 
+            - APPLICATION_URL=
+            - GDRIVE_CLIENT_ID=<gdrive_client>
+            - GDRIVE_CLIENT_SECRET=<gdrive_secret>
+            - DROPBOX_CLIENT_ID=<dropbox_key>
+            - ONLYOFFICE_URL=http://onlyoffice
+
+    onlyoffice:
+        container_name: filestash_oods
+        image: onlyoffice/documentserver
+        restart: unless-stopped
