@@ -2,7 +2,7 @@
 
 ## What is it?
 Docker-debian-sftp is a Docker container running sftp server.
-Not only you get isolation from the side of Docker, but also there is chroot in sshd_config set-up. It is meant to run alongside with [filestash](https://github.com/mickael-kerjean/filestash), but can very simply edit *docker-compose.yml* not to use filestash.
+Not only you get isolation from the side of Docker, but also there is chroot in sshd_config set-up. It is meant to run alongside with [Filestash](https://github.com/mickael-kerjean/filestash), but can very simply edit *docker-compose.yml* not to use Filestash.
 
 ## How to use it?
 While in main directory of this repo, you can simply execute command: `docker-compose up -d` or copy content of my *docker-compose.yml*:
@@ -39,7 +39,7 @@ services:
 ```
 
 ## Don't want to use filestash?
-If you don't want to use filestash just delete lines of code associated with filestash service or copy:
+If you don't want to use Filestash just delete lines of code associated with filestash service or copy:
 
 ``` yml
 version: '3.3'
