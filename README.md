@@ -1,5 +1,8 @@
 # docker-debian-sftp
 
+GitHub: https://github.com/Cimlah/docker-debian-sftp
+DockerHub: https://hub.docker.com/repository/docker/cimlah/docker-debian-sftp
+
 # What is it?
 Docker-debian-sftp is a Docker container running sftp server.
 Not only you get isolation from the side of Docker, but also there is chroot in sshd_config set-up. <br/>
