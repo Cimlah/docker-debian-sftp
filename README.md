@@ -1,6 +1,6 @@
 # docker-debian-sftp
 
-GitHub: https://github.com/Cimlah/docker-debian-sftp
+GitHub: https://github.com/Cimlah/docker-debian-sftp <br/>
 DockerHub: https://hub.docker.com/repository/docker/cimlah/docker-debian-sftp
 
 # What is it?
