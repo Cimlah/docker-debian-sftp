@@ -68,4 +68,7 @@ If you want to use it, you can execute command from your host OS: `docker exec -
 Please, read my script to know what permissions are set by it.
 
 # Can I customise it for my needs?
-Of course, if you want to change something, for example in *sshd_config*, do it and then build the image yourself. In directory *build_it_yourself* you have everything needed to customise and build the image. To build the image, execute command: `docker build -t *name of your image* .` while you're inside *build_it_yourself* directory.ą
+Of course, if you want to change something, for example in *sshd_config*, do it and then build the image yourself. In directory *build_it_yourself* you have everything needed to customise and build the image. To build the image, execute command: `docker build -t *name of your image* .` while you're inside *build_it_yourself* directory.
+
+# Does it even work?
+Yes, it does, you can check it on my demo, visit: https://files.cimlah.art and select *PUBLIC* tab.
