@@ -12,6 +12,7 @@ Not only you get isolation from the side of Docker, but also there is chroot in 
 It is meant to run alongside with [Filestash](https://github.com/mickael-kerjean/filestash), but can very simply edit *docker-compose.yml* not to use Filestash.
 
 # How to use it?
+**First of all, choose proper *docker-compose.yml* file for your architecture (either *docker-compose_amd64.yml* or *docker-compose_other-architectures.yml*) and rename it to *docker-compose.yml*.** <br/>
 While in main directory of this repo, you can simply execute command: `docker-compose up -d` or copy content of my *docker-compose.yml*:
 
 ``` yml
@@ -45,7 +46,7 @@ services:
             - ONLYOFFICE_URL=http://onlyoffice
 ```
 
-## Don't want to use filestash?
+## Don't want to use filestash or don't use amd64 architectire?
 If you don't want to use Filestash just delete lines of code associated with filestash service or copy:
 
 ``` yml
