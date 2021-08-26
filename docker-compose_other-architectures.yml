@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+    debian-sftp:
+        image: cimlah/docker-debian-sftp:latest
+        restart: unless-stopped
+        hostname: debian-sftp
+        container_name: debian-sftp
+        ports:
+            - "2800:22"
+        stdin_open: true
+        tty: true
+        volumes: 
+            - /path/you/want/to/use:/home
