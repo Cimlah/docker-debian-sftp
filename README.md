@@ -1,6 +1,8 @@
 # docker-debian-sftp
 
-**!UPDATE!** Working on Raspberry Pi support (arm64 and possibly arm) <br/>
+**!UPDATE!** docker-debian-sftp now has support for other architectures <br/> <br/>
+**docker-debian-sftp** has support for: `amd64`, `i386`, `arm64` and `armv7`. <br/>
+**Filestash** still only has support for `amd64` (not up to me, because it's not my project). If you work on arm port of Filestash, please let me know. <br/> <br/>
 GitHub: https://github.com/Cimlah/docker-debian-sftp <br/>
 DockerHub: https://hub.docker.com/repository/docker/cimlah/docker-debian-sftp
 
