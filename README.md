@@ -46,7 +46,7 @@ services:
             - ONLYOFFICE_URL=http://onlyoffice
 ```
 
-## Don't want to use filestash or don't use amd64 architectire?
+## Don't want to use filestash or don't use amd64 architecture?
 If you don't want to use Filestash just delete lines of code associated with filestash service or copy:
 
 ``` yml
